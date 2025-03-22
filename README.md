@@ -54,4 +54,23 @@ add_action( 'init', 'twentytwentyfour_pattern_categories' );
 ```
 
 
+# 最终优化访问速度超级加倍！
+
+`此次省略了一些配置` 
+
+```bash
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 7.441270s
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 8.500302s
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 8.223799s
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 6.825718s
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 2.204961s
+dill@D:~$ curl -o /dev/null -s -w 'Total: %{time_total}s\n' http://localhost:5555
+Total: 2.466140s  <<<< Wohoo ！！ ！ Amazing!
+```
+
 
